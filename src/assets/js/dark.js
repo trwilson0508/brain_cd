@@ -27,7 +27,8 @@ function detectColorScheme() {
 	}
 
 	// if there is no preference set, the default of light will be used. apply accordingly
-	theme === 'dark' ? enableDarkMode() : disableDarkMode();
+	//theme === 'dark' ? enableDarkMode() : disableDarkMode();
+	disableDarkMode();
 }
 
 // run on page load
