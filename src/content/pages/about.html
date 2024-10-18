@@ -1,10 +1,10 @@
 ---
-title: 'About | Code Stitch Web Designs'
+title: 'About | Brain Consulting & Development'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+preloadImg: '/assets/images/BW Sitting.jpg'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
+    key: About
     order: 200
 ---
 
@@ -22,10 +22,19 @@ eleventyNavigation:
     <section id="int-hero">
         <h1 id="home-h">About</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/image1.jpeg">
-            <source media="(min-width: 601px)" srcset="/assets/images/image1.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/image1.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <!-- Mobile Image -->
+            <source media="(max-width: 600px)" srcset="/assets/images/image1.webp" type="image/webp">
+            
+            <!-- Larger Image for Bigger Screens (Optimized Format) -->
+            <source media="(min-width: 601px)" srcset="/assets/images/image1.webp" type="image/webp">
+            
+            <!-- Fallback Image for Older Browsers -->
+            <img aria-hidden="true" decoding="async" src="/assets/images/image1.jpeg" 
+                 alt="kitchen cabinets" 
+                 width="2500" height="1667"
+                 loading="lazy">
         </picture>
+        
 
     </section>
 
@@ -38,20 +47,17 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/BW Sitting.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/BW Sitting.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/BW Sitting.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/BW Sitting.jpg" alt="portrait" loading="lazy" width="400" height="563">
                 </picture>
 
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
-                <h2 class="cs-title">About Brain Consulting and Development</h2>
+                <h2 class="cs-title">About Brain Consulting & Development</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Brain Consulting & Development delivers expert level knowledge of the bicycle industry and supply chain, working with suppliers spanning the globe, to optimize quality, manage costs, and reduce time to market. Deeply rooted in the bicycle industry, Brain can also create cross-functional teams of product managers, industrial designers, engineers as well as graphic designers.  With the ability to oversee the entire product development process, from conception to sourcing, from manufacturing to delivery, our goal is to ensure quality, innovation, and customer satisfaction every step of the way. 										
+
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
@@ -65,7 +71,5 @@ eleventyNavigation:
             </div>
         </div>
     </section>
-
-    {% include 'components/cta.html' %}
 
 {% endblock %}
