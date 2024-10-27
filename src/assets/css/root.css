@@ -5,8 +5,8 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
+    --primary: #6d6d6d;
+    --primaryLight: #6d6d6d;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -68,7 +68,7 @@
     text-align: center;
   }
   .cs-button-solid:hover {
-    color: #fff;
+    color: #000000;
   }
   .cs-button-solid:hover:before {
     width: 100%;
@@ -208,7 +208,7 @@
   body.dark-mode #dark-mode-toggle .cs-moon {
     opacity: 0;
     transform: translate(-50%, -150%);
-    fill: #fff;
+    fill: #000000;
   }
   #dark-mode-toggle {
     z-index: 1000;
@@ -268,7 +268,7 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: #000000;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -376,7 +376,7 @@
     opacity: 0;
     visibility: hidden;
     transform: scaleX(0);
-    background-color: #fff;
+    background-color: #000000;
     height: 100vh;
     overflow: hidden;
     transition: transform 0.4s, opacity 0.3s;
@@ -503,7 +503,7 @@
     filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
+    background-color: #000000;
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--medium);
@@ -578,7 +578,7 @@
   #cs-navigation .cs-li-link.cs-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: #fff;
+    color: #000000;
   }
 }
 /* Desktop - 1024px */
@@ -621,7 +621,7 @@
     transform: scaleY(0);
     border-bottom: 5px solid var(--primary);
     margin: 0;
-    background-color: #fff;
+    background-color: #000000;
     min-width: 12.5rem;
     overflow: hidden;
     padding: 0;
@@ -725,7 +725,7 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: #000000;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -865,7 +865,7 @@
     max-width: 31.25rem;
     width: 96%;
     font-size: 2.1333333333rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #int-hero p {
@@ -874,7 +874,7 @@
     margin-bottom: 1.875rem;
     max-width: 25rem;
     width: 96%;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #int-hero:before {
@@ -944,7 +944,7 @@
     font-size: min(9vw, 3rem);
     line-height: 1.2083333333em;
     font-weight: 900;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #cta p {
@@ -953,7 +953,7 @@
     margin-bottom: 2.25rem;
     max-width: 37.375rem;
     width: 96%;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #cta:before {
@@ -1062,7 +1062,7 @@
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.9285714286rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #footer .right-section {
@@ -1088,12 +1088,12 @@
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: #000000;
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.1666666667em;
-    color: #fff;
+    color: #000000;
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1106,7 +1106,7 @@
     font-size: 1.125rem;
     line-height: 1.1666666667em;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1147,7 +1147,7 @@
     width: 96%;
     font-size: 1rem;
     line-height: 2.25rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   #footer .credit a {

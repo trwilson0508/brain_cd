@@ -5,17 +5,20 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero {
-    z-index: 1;
     position: relative;
-    /* prevents overflow from the lines extending past the screen width */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    /* changes on tablet */
-    padding: 0 1rem;
-    padding-bottom: 6.25rem;
-    font-family: "Roboto", "Arial", sans-serif;
-    /* Centers button */
+}
+
+#hero .cs-container {
     text-align: center;
-  }
+    padding: clamp(9em, 25.95vw, 17.5em) 1rem;
+}
   #hero .cs-picture {
     z-index: -2;
     position: absolute;
@@ -49,16 +52,6 @@
     width: 100%;
     /* prevents the cursor from interacting with it */
     pointer-events: none;
-  }
-  #hero .cs-container {
-    position: relative;
-    margin: auto;
-    max-width: 80em;
-    width: 100%;
-    /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-    /* 144px - 280px - leaving extra space for the navigation */
-    /* changes on tablet */
-    padding: clamp(9em, 25.95vw, 17.5em) 0;
   }
   #hero .cs-container:before {
     position: absolute;
@@ -128,7 +121,7 @@
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
-    color: #fff;
+    color: #8f8f8f;
   }
   #hero .cs-button-transparent .cs-img {
     display: block;
@@ -147,7 +140,7 @@
     /* this is what creates the grow affect on hover */
     transform: scaleX(0);
     display: block;
-    background: #000;
+    background: #ffffff;
     transition: transform 0.3s;
     transform-origin: left;
   }
@@ -182,17 +175,18 @@
     margin-bottom: 0;
   }
 }
-/* Desktop Parallax Effect - 1300px */
+/* Desktop Parallax Effect - 1300px 
 @media only screen and (min-width: 81.25em) {
   #hero {
     background: url("/assets/images/landing.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* creates parallax effect on background image */
+     creates parallax effect on background image 
     background-attachment: fixed;
   }
 }
+*/
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #hero .cs-background:before {
@@ -212,7 +206,7 @@
     margin: auto;
     margin-top: -10.4375em;
     margin-bottom: 3.125em;
-    background: #fff;
+    background: #000000;
     max-width: 82.5em;
     width: 90%;
     padding: 3.125em 1.25em;
@@ -291,7 +285,7 @@
   }
   body.dark-mode #services h2 {
     font-weight: bold;
-    color: #fff;
+    color: #000000;
   }
 }
 
