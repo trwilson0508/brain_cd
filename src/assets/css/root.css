@@ -5,12 +5,12 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #6d6d6d;
-    --primaryLight: #6d6d6d;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
+    --primary: #a7a9ac;
+    --primaryLight: #a7a9ac;
+    --secondary: #000000;
+    --secondaryLight: #000000;
+    --headerColor: #000000;
+    --bodyTextColor: #a7a9ac;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -54,7 +54,7 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    background-color: var(--primary);
+    background-color: transparent;
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
@@ -62,13 +62,13 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
   }
   .cs-button-solid:hover {
-    color: #000000;
+    color: #a7a9ac;
   }
   .cs-button-solid:hover:before {
     width: 100%;
@@ -1034,7 +1034,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #13191d;
+    background: #000000;
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
   }
@@ -1062,7 +1062,7 @@
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.9285714286rem;
-    color: #000000;
+    color: #a7a9ac;
     text-align: center;
   }
   #footer .right-section {
@@ -1088,12 +1088,12 @@
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #000000;
+    color: #a7a9ac;
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.1666666667em;
-    color: #000000;
+    color: #a7a9ac;
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1106,7 +1106,7 @@
     font-size: 1.125rem;
     line-height: 1.1666666667em;
     font-weight: bold;
-    color: #000000;
+    color: #a7a9ac;
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1147,7 +1147,7 @@
     width: 96%;
     font-size: 1rem;
     line-height: 2.25rem;
-    color: #000000;
+    color: #a7a9ac;
     text-align: center;
   }
   #footer .credit a {

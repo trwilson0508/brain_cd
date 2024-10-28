@@ -68,12 +68,12 @@
   }
   #hero .cs-flex-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center; /* Centers the elements horizontally */
+    justify-content: center; /* Centers elements vertically */
     margin: auto;
     /* 60px - 220px */
-    margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
+    margin-bottom: clamp(3.75em, 15.5vw, 4.00em);
     /* 464px - 562px */
     max-width: clamp(29em, 60vw, 35.125em);
     width: 80vw;
@@ -121,7 +121,7 @@
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
-    color: #8f8f8f;
+    color: #ffffff;
   }
   #hero .cs-button-transparent .cs-img {
     display: block;
@@ -140,13 +140,19 @@
     /* this is what creates the grow affect on hover */
     transform: scaleX(0);
     display: block;
-    background: #ffffff;
+    background: #a7a9ac;
     transition: transform 0.3s;
     transform-origin: left;
   }
   #hero .cs-button-transparent:hover:before {
     transform: scaleX(1);
   }
+  #hero .cs-image {
+    width: 35vw; /* Image takes half the width of the viewport */
+    height: auto; /* Height adjusts according to the image's aspect ratio */
+    object-fit: contain; /* Ensures the image scales without cropping */
+    margin: 2rem 0; /* Adds space between the topper and the button */
+}
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {

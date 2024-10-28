@@ -1,0 +1,4 @@
+git config user.name "trwilson0508"
+git config user.email "trwilson0508@yahoo.com"
+eval "$(ssh-agent -s)"
+ssh-add "C:\Users\Tim Wilson\.ssh\id_ed25519_new"
