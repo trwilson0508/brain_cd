@@ -4,9 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "eleventy --serve",
-        "clean": "del-cli ./public --force",
-        "build": ""
+        "start": "live-server public",
+        "build": "echo 'Build complete'"
     },
     "repository": {
         "type": "git",
@@ -29,5 +28,8 @@
         "esbuild": "^0.21.4",
         "npm-run-all": "^4.1.5",
         "sass": "^1.77.4"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2"
     }
 }
