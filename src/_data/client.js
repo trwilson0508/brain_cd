@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Brain Consulting & Development, LLC",
     "email": "brian@braincd.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "phoneForTel": "657-352-3851",
+    "phoneFormatted": "(657) 352-3851",
     "address": {
         "lineOne": "21022 Los Alisos Blvd #224",
         "city": "Rancho Santa Margarita",

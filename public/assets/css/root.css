@@ -1047,13 +1047,14 @@
     display: inline-block;
     margin: auto;
     margin-bottom: 1.875em;
+    margin-left: 10rem !important;
     height: 2em;
     width: auto;
     text-align: center;
   }
   #footer .left-section .logo img {
     display: block;
-    height: 400%;
+    height: 250%;
     width: auto;
   }
   #footer .left-section p {

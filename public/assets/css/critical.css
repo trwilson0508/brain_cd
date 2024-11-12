@@ -10,25 +10,25 @@
     height: 100vh; /* Full viewport height */
     background-color: #000; /* Black background */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     overflow: hidden;
-}
-
-#hero .cs-container {
-    text-align: center;
-    padding: clamp(9em, 25.95vw, 17.5em) 1rem;
-}
-  #hero .cs-picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    /* Background Image */
-    width: 100%;
   }
+
+  #hero .cs-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0; /* Remove padding to prevent pushing content */
+      height: 100%; /* Ensure it takes the full height of #hero */
+  }
+
+  #hero .cs-image {
+      max-width: 80%; /* Adjust as needed for responsive scaling */
+      margin-top: 15rem !important; /* Fine-tune to adjust vertical position if needed */
+  }
+
   #hero .cs-picture img {
     position: absolute;
     top: 0;

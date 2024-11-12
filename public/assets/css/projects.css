@@ -11,6 +11,7 @@
     padding: var(--sectionPadding);
     /* Centers button */
     text-align: center;
+    background-color: #000;
   }
   #gallery .cs-container {
     margin: auto;

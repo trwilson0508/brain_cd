@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs {
     padding: var(--sectionPadding);
+    background-color: #000;
   }
   #sbs .cs-container {
     display: flex;
@@ -19,9 +20,9 @@
   }
   #sbs .cs-left {
     position: relative;
-    height: 39.75em;
+    height: 100vh;
     /* using ems so we can use font size to scale the whole section */
-    width: 39.4375em;
+    width: 50%;
     /* scaling the font size with the view width */
     font-size: min(2.31vw, 0.7em);
   }
@@ -60,14 +61,21 @@
   #sbs .cs-right {
     margin: auto;
     max-width: 33.875rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important; /* Center content vertically */
+    align-items: left !important; /* Center content horizontally */
+    text-align: center; /* Center the text within the section */
   }
   #sbs .cs-topper {
     margin-bottom: 0.25rem;
-    text-align: left;
+    text-align: center;
   }
   #sbs .cs-title {
     max-width: 50rem;
-    text-align: left;
+    text-align: center;
+    color: #fff;
   }
   #sbs .cs-text {
     margin-bottom: 1rem;
