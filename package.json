@@ -6,7 +6,7 @@
     "scripts": {
         "start": "eleventy --serve",
         "clean": "del-cli ./public --force",
-        "build": "eleventy"
+        "build": ""
     },
     "repository": {
         "type": "git",
