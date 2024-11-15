@@ -10,9 +10,9 @@
   }
   #sbs .cs-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Keep left and right sections side by side */
+    justify-content: space-between; /* Add spacing between left and right sections */
+    align-items: center; /* Align content to the top of the container */
     margin: auto;
     max-width: 80rem;
     width: 100%;
@@ -20,7 +20,7 @@
   }
   #sbs .cs-left {
     position: relative;
-    height: 100vh;
+    height: 75vh;
     /* using ems so we can use font size to scale the whole section */
     width: 50%;
     /* scaling the font size with the view width */

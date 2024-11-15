@@ -45,7 +45,7 @@
     margin: 0;
     max-width: 40.625rem;
     width: 100%;
-    font-size: var(--bodyFontSize);
+    font-size: 1.5rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
     text-align: inherit;
