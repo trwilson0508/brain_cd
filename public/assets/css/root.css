@@ -341,7 +341,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 2px;
-    background-color: #1a1a1a;
+    background-color: #a7a9ac;
     height: 2px;
     width: 100%;
   }
@@ -442,7 +442,7 @@
     /* 16px - 24px */
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     line-height: 1.2em;
-    color: var(--headerColor);
+    color: #a7a9ac;
   }
   #cs-navigation .cs-li-link:before {
     position: absolute;
