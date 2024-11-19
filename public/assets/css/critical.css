@@ -2,7 +2,24 @@
 html {
   scroll-behavior: smooth;
  }
- #down {
+ #prod_plan {
+  scroll-margin-top: 100px;
+ } 
+ #prod_dev {
+  scroll-margin-top: 100px;
+ } 
+ #BOM {
+  scroll-margin-top: 100px;
+ } 
+ #Sourcing {
+  scroll-margin-top: 100px;
+ } #Negotation {
+  scroll-margin-top: 100px;
+ } 
+ #OEM {
+  scroll-margin-top: 100px;
+ } 
+ #DTP {
   scroll-margin-top: 100px;
  } 
  /* STYLES FOR ABOVE THE FOLD */
@@ -104,7 +121,7 @@ html {
     margin: 0 auto clamp(1rem, 2vw, 1.5rem) 0;
     /* 40px - 48px */
     margin-bottom: clamp(1.5rem, 3vw, 2rem);
-    color: var(--bodyTextColorWhite);
+    color: #a7a9ac;
     text-align: center;
   }
     #hero .scroll-button {
