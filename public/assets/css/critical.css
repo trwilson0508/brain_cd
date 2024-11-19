@@ -21,6 +21,14 @@ html {
  } 
  #DTP {
   scroll-margin-top: 100px;
+ } #felt {
+  scroll-margin-top: 100px;
+ } 
+ #ambit {
+  scroll-margin-top: 100px;
+ } 
+ #gt {
+  scroll-margin-top: 100px;
  } 
  /* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
@@ -33,7 +41,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Full viewport height */
-    max-height: 120vh;
+    max-height: 140vh;
     background-color: #000; /* Black background */
     display: flex;
     justify-content: center; /* Center horizontally */
