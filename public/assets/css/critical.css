@@ -1,13 +1,22 @@
-/* STYLES FOR ABOVE THE FOLD */
+
+html {
+  scroll-behavior: smooth;
+ }
+ #down {
+  scroll-margin-top: 100px;
+ } 
+ /* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
+
 @media only screen and (min-width: 0rem) {
   #hero {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Full viewport height */
+    max-height: 120vh;
     background-color: #000; /* Black background */
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -97,6 +106,29 @@
     margin-bottom: clamp(1.5rem, 3vw, 2rem);
     color: var(--bodyTextColorWhite);
     text-align: center;
+  }
+    #hero .scroll-button {
+    text-decoration: none; /* Remove underline */
+    color: #a7a9ac; /* Text color */
+    display: inline-block; /* Inline-block for padding and button-like behavior */
+    text-align: center; /* Center the text */
+    font-size: 1.5rem; /* Font size */
+    margin-bottom: 1rem; /* Spacing between buttons */
+    padding: 0.5rem 1rem; /* Add padding for button feel */
+    background-color: #000; /* Blue button background */
+    border-radius: 8px; /* Rounded corners for the button */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+
+  #hero .scroll-button:hover {
+    background-color: #000; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    text-decoration: underline; /* Optional underline on hover */
+  }
+
+  #hero .scroll-button:active {
+    transform: translateY(1px); /* Slight depress effect on click */
   }
   #hero .cs-button-solid {
     margin-bottom: 1rem;
