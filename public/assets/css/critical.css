@@ -41,7 +41,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Full viewport height */
-    max-height: 140vh;
+    max-height: 160vh;
     background-color: #000; /* Black background */
     display: flex;
     justify-content: center; /* Center horizontally */
