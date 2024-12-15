@@ -78,6 +78,24 @@ html {
       max-width: 80%; /* Adjust as needed for responsive scaling */
       /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
   }
+  #hero .cs-image2 {
+    max-width: 80%; /* Adjust as needed for responsive scaling */
+    /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
+  }
+  #hero .cs-image-pair {
+    display: flex; /* Enable flexbox for side-by-side layout */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Add space between the images */
+    margin: 0 auto; /* Ensure the whole block is centered */
+    text-align: center; /* Align content for better consistency */
+    transform: translateX(-10%);
+  }
+
+  #hero .cs-image-pair img {
+      max-width: 45%; /* Ensure images scale appropriately */
+      flex: 1; /* Allow images to scale evenly */
+      vertical-align: middle;
+  }
 
   #hero .cs-picture img {
     position: absolute;
