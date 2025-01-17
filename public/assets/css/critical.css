@@ -46,6 +46,9 @@ html {
  #riteway {
   scroll-margin-top: 100px;
  }
+ #gallery {
+  scroll-margin-top: 100px;
+ }
  /* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
 <---           Hero             -->
@@ -78,7 +81,19 @@ html {
       max-width: 80%; /* Adjust as needed for responsive scaling */
       /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
   }
-
+  #hero .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    justify-content: center;
+  }
+  
+  #hero .gallery img {
+    width: calc(33.33% - 10px); /* Adjust width to fit three per row with gap */
+    object-fit: cover; /* Ensure images fit nicely */
+    border-radius: 8px; /* Optional styling */
+  }
+  
   #hero .cs-image2 {
     max-width: 100%;
     width: 50vw; /* Image takes half the width of the viewport */
