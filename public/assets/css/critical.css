@@ -78,24 +78,35 @@ html {
       max-width: 80%; /* Adjust as needed for responsive scaling */
       /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
   }
+
   #hero .cs-image2 {
-    max-width: 80%; /* Adjust as needed for responsive scaling */
-    /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
-  }
-  #hero .cs-image-pair {
-    display: flex; /* Enable flexbox for side-by-side layout */
-    justify-content: center; /* Center images horizontally */
-    gap: 20px; /* Add space between the images */
-    margin: 0 auto; /* Ensure the whole block is centered */
-    text-align: center; /* Align content for better consistency */
-    transform: translateX(-10%);
+    max-width: 100%;
+    width: 50vw; /* Image takes half the width of the viewport */
+    height: auto; /* Height adjusts according to the image's aspect ratio */
+    object-fit: contain; /* Ensures the image scales without cropping */
+    margin: 2rem 0; /* Adds space between the topper and the button */
   }
 
-  #hero .cs-image-pair img {
-      max-width: 45%; /* Ensure images scale appropriately */
+  #hero .cs-image2 img {
+      max-width: 80%; /* Ensure images scale appropriately */
       flex: 1; /* Allow images to scale evenly */
       vertical-align: middle;
   }
+
+  #hero .cs-image-pair {
+    display: flex;
+    justify-content: center; /* Center the image pair */
+    gap: 20px; /* Space between the two images */
+    transform: translateX(20%); /* Optional: Shift images left */
+    max-width: 60%;
+}
+
+#hero .cs-image-pair img {
+    max-width: 50%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    vertical-align: middle;
+}
 
   #hero .cs-picture img {
     position: absolute;
@@ -244,6 +255,13 @@ html {
     height: auto; /* Height adjusts according to the image's aspect ratio */
     object-fit: contain; /* Ensures the image scales without cropping */
     margin: 2rem 0; /* Adds space between the topper and the button */
+}
+#hero #mainbikes {
+  display: flex;
+  flex-direction: column; /* Stack text and images vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  gap: 1rem; /* Space between the text and the image pair */
 }
 }
 /* Tablet - 768px */
