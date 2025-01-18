@@ -82,10 +82,23 @@ html {
       /*margin-top: 15rem !important;*/ /* Fine-tune to adjust vertical position if needed */
   }
   #hero .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row by default */
+    gap: 20px; /* Space between items */
+    margin: 20px 0;
+  }
+  
+  #hero .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  #hero .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; /* Space between images */
     justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   #hero .gallery img {
@@ -93,6 +106,16 @@ html {
     object-fit: cover; /* Ensure images fit nicely */
     border-radius: 8px; /* Optional styling */
   }
+  
+  @media (max-width: 768px) {
+    #hero .gallery {
+      grid-template-columns: 1fr; /* 1 item per row on smaller screens */
+    }
+    #hero .gallery img {
+      width: 90%;
+    }
+  }
+
   
   #hero .cs-image2 {
     max-width: 100%;
