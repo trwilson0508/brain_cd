@@ -60,7 +60,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Full viewport height */
-    max-height: 200vh;
+    max-height: 1000vh;
     background-color: #000; /* Black background */
     display: flex;
     justify-content: center; /* Center horizontally */
