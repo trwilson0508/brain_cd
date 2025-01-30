@@ -1063,7 +1063,12 @@ html {
     max-width: 90%; /* Keeps it responsive */
     width: 600px; /* Adjust based on your design */
     margin: 0 auto; /* Centers the section */
-    padding-left: 4rem;
+    padding-left: 2rem;
+  }
+  @media only screen and (min-width: 30rem) {
+    #footer .left-section {
+      padding-left: 4rem;
+    }
   }
   #footer .left-section .logo {
     display: inline-block;
