@@ -1057,10 +1057,13 @@ html {
     text-align: center;
   }
   #footer .left-section {
-    margin: auto;
-    margin-bottom: 3.125rem;
-    text-align: center;
-    margin-left: 5rem;
+    /* margin: auto;
+    margin-bottom: 3.125rem;*/
+    text-align: center; 
+    max-width: 90%; /* Keeps it responsive */
+    width: 600px; /* Adjust based on your design */
+    margin: 0 auto; /* Centers the section */
+    padding-left: 4rem;
   }
   #footer .left-section .logo {
     display: inline-block;
