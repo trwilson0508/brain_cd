@@ -59,7 +59,7 @@ html {
   #hero {
     position: relative;
     width: 100%;
-    min-height: 120vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     max-height: 1000vh;
     background-color: #000; /* Black background */
     display: flex;
