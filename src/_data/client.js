@@ -4,7 +4,7 @@ module.exports = {
     "phoneForTel": "657-352-3851",
     "phoneFormatted": "(657) 352-3851",
     "address": {
-        "lineOne": "21022 Los Alisos Blvd #224",
+        "lineOne": "21022 Los Alisos Blvd Unit 1521",
         "city": "Rancho Santa Margarita",
         "state": "CA",
         "zip": "92688",
